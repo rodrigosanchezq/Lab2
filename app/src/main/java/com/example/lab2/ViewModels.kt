@@ -1,9 +1,12 @@
-package com.example.lab2.ui.theme
+package com.example.lab2
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.example.lab2.repositories.UserRepository
+import com.example.lab2.repositories.ShiftRepository
+import com.example.lab2.repositories.AppSettingsRepository
 import kotlinx.coroutines.launch
 
 class UserViewModel(private val userRepository: UserRepository) : ViewModel() {
